@@ -1,0 +1,110 @@
+═══════════════════════════════════════════════════════
+SOLUCIÓN: g++ No se Detecta en el PATH
+═══════════════════════════════════════════════════════
+
+✅ LO QUE HICE POR TI:
+
+He actualizado los scripts para usar la ruta completa a tu g++:
+  C:\Familia\David\Programas\Dev-c\Dev-Cpp\MinGW64\bin\g++.exe
+
+Ahora simplemente usa:
+  • compilar.bat  (fácil)
+  • compilar.ps1  (PowerShell)
+
+No debería haber más problemas.
+
+
+❓ SI AÚN NO FUNCIONA:
+
+Opción 1: Verifica que la ruta es correcta
+───────────────────────────────────────────
+1. Abre una PowerShell
+2. Ejecuta: dir "C:\Familia\David\Programas\Dev-c\Dev-Cpp\MinGW64\bin\g++.exe"
+3. Si aparece el archivo, la ruta es correcta
+4. Si NO aparece, va a Opción 2
+
+
+Opción 2: Busca dónde está tu g++
+──────────────────────────────────
+1. Doble clic en: detectar.bat
+2. Te dirá dónde está tu g++ (si está en una carpeta común)
+3. Copia la ruta que aparezca
+
+
+Opción 3: Busca manualmente
+───────────────────────────
+1. Abre una PowerShell
+2. Ejecuta: Get-Command g++ -All
+   (te dirá dónde está g++, si está en PATH)
+3. O ejecuta: where g++
+   (lo mismo pero en cmd)
+
+
+❌ SI LA RUTA ES DIFERENTE:
+
+Si tu g++ está en una ruta diferente, edita compilar.bat:
+
+1. Abre compilar.bat con Bloc de Notas
+2. Encuentra esta línea:
+   "C:\Familia\David\Programas\Dev-c\Dev-Cpp\MinGW64\bin\g++.exe"
+3. Reemplázala con tu ruta real
+4. Guarda
+5. Vuelve a intentar
+
+
+✨ SOLUCIÓN PERMANENTE: Agregar g++ al PATH
+
+Si quieres que g++ funcione desde cualquier lugar:
+
+PASO 1: Encuentra la carpeta bin de tu g++
+──────────────────────────────────────────
+Sabemos que está en:
+  C:\Familia\David\Programas\Dev-c\Dev-Cpp\MinGW64\bin
+
+PASO 2: Agrega esa carpeta al PATH
+──────────────────────────────────
+
+Windows 10/11:
+  1. Press: Win + X
+  2. Selecciona: "Sistema"
+  3. Click en: "Información del sistema" (arriba a la izquierda)
+  4. Click en: "Configuración avanzada del sistema"
+  5. Click en: "Variables de entorno..."
+  6. En "Variables del sistema", busca "Path"
+  7. Click en "Editar"
+  8. Click en "Nuevo"
+  9. Pega: C:\Familia\David\Programas\Dev-c\Dev-Cpp\MinGW64\bin
+  10. Click OK varias veces
+  11. Reinicia PowerShell o CMD
+
+PowerShell Rápido:
+  1. Abre PowerShell como Administrador
+  2. Ejecuta:
+     [Environment]::SetEnvironmentVariable(
+       "Path",
+       [Environment]::GetEnvironmentVariable("Path","Machine") + ";C:\Familia\David\Programas\Dev-c\Dev-Cpp\MinGW64\bin",
+       "Machine"
+     )
+  3. Reinicia PowerShell
+  4. Prueba: g++ --version
+
+PASO 3: Verifica
+──────────────
+1. Abre una PowerShell NUEVA
+2. Ejecuta: g++ --version
+3. Si ves la versión, ¡está funcionando!
+
+
+📋 ALTERNATIVA: Usa los scripts editados
+
+Por ahora, usa:
+  • compilar.bat    (ya tienen la ruta correcta)
+  • compilar.ps1
+
+Estos scripts ya usan la ruta completa, así que funcionarán
+sin necesidad de tener g++ en el PATH.
+
+
+═══════════════════════════════════════════════════════
+¿Algún problema? Revisa que src/app.cpp exista
+═══════════════════════════════════════════════════════

@@ -1,0 +1,70 @@
+GUÍA RÁPIDA DE 30 SEGUNDOS
+==========================
+
+¿QUÉ TIENES?
+- Una carpeta "Proyecto" lista para compilar
+- Código fuente en: src/app.cpp
+- Scripts listos en: compilar.bat y ejecutar.bat
+
+¿QUÉ NECESITAS?
+- MinGW con g++ (descarga desde: https://www.mingw-w64.org/)
+
+¿QUÉ HACER?
+
+PASO 1 - COMPILAR (elige UNO):
+  
+  Option A (FÁCIL): 
+    → Doble clic en: compilar.bat
+    → Espera a que termine
+  
+  Option B (PowerShell):
+    → Ejecuta: .\compilar.ps1
+  
+  Option C (VS Code):
+    → Presiona: Ctrl + Shift + B
+    → Selecciona: "Compilar Proyecto"
+
+PASO 2 - EJECUTAR:
+  
+  Option A (FÁCIL):
+    → Doble clic en: ejecutar.bat
+  
+  Option B (PowerShell):
+    → Ejecuta: .\output\app.exe
+  
+  Option C (Directo):
+    → Va a: output/ 
+    → Doble clic en: app.exe
+
+¿LISTO? 🎉
+
+Si todo funciona:
+  ✅ Se abre una ventana con un árbol de temas
+  ✅ Puedes hacer clic para expandir/seleccionar
+  ✅ El lado derecho muestra el tema seleccionado
+
+¿PROBLEMAS?
+
+❌ "g++ not found"
+✓ Instala MinGW: https://www.mingw-w64.org/
+
+❌ No aparece output/app.exe
+✓ Revisa los errores de compilación
+✓ Asegúrate que src/app.cpp existe
+
+❌ La app no abre
+✓ Compila primero con compilar.bat
+✓ Verifica que Windows Defender no la bloquee
+
+✏️  NOTAS:
+
+• El .exe es portátil (cópialo a cualquier lado)
+• Puede demorarse la primera compilación (es normal)
+• Los mensajes de compilación aparecen en la terminal
+• La interfaz muestra todos los temas de la jerarquía
+
+📖  Para más info: lee INSTRUCCIONES.txt o README.md
+
+==================================================
+¡Listo! Ahora sigue los PASOS 1 y 2 arriba. 🚀
+==================================================

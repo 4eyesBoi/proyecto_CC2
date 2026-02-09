@@ -1,0 +1,84 @@
+╔════════════════════════════════════════════════════════════════════╗
+║      NAVEGADOR DE ALGORITMOS DE BÚSQUEDA - GUÍA DE INICIO           ║
+║              Proyecto Ciencias de Computación II                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+✨ COMIENZA AQUÍ:
+
+  1️⃣  Compila el proyecto:
+      
+      • Windows: Doble clic en compilar.bat
+      • PowerShell: .\compilar.ps1
+      • VS Code: Ctrl + Shift + B
+
+  2️⃣  Ejecuta la aplicación:
+      
+      • Windows: Doble clic en ejecutar.bat
+      • Directo: output\app.exe
+
+📂 ARCHIVOS IMPORTANTES:
+
+   src/app.cpp              - Código fuente (único archivo)
+   compilar.bat             - Script compilar (Windows)
+   ejecutar.bat             - Script ejecutar (Windows)
+   compilar.ps1             - Script compilar (PowerShell)
+   INSTRUCCIONES.txt        - Guía detallada
+   README.md                - Documentación
+
+
+🎯 ¿QUÉ OBTENDRÁS?
+
+   Una ventana con:
+   ┌─────────────────────────────────┐
+   │ Árbol de Temas  │ Detalles      │
+   ├────────────────┼───────────────┤
+   │ • Algoritmos   │ [Información] │
+   │   • Búsquedas  │               │
+   │   • Hash       │               │
+   │ • Índices      │               │
+   └────────────────┴───────────────┘
+
+
+🚀 CARACTERÍSTICAS:
+
+   ✅ Aplicación portátil (solo .exe, sin instalación)
+   ✅ Interfaz profesional y fácil de usar
+   ✅ Navegación jerárquica intuitiva
+   ✅ Compilación rápida y simple
+   ✅ Funciona en Windows 7+
+
+
+📋 REQUISITOS MÍNIMOS:
+
+   • MinGW con g++: https://www.mingw-w64.org/
+   • Windows 7 o superior
+   • ~10 MB de espacio
+
+
+❓ ¿PROBLEMAS AL COMPILAR?
+
+   • Verifica que g++ esté instalado: g++ --version
+   • Descarga MinGW desde: https://www.mingw-w64.org/
+   • Si usas Dev-C++: MinGW ya lo incluye
+   • Agrega MinGW al PATH si es necesario
+
+
+✍️  TIPS:
+
+   • El .exe es completamente independiente (puedes copiarlo)
+   • No necesita nada instalado en el destino
+   • La interfaz es responsiva (se ajusta al redimensionar)
+   • Haz clic en los temas para expandir/seleccionar
+
+
+📖 MÁS INFORMACIÓN:
+
+   Lee: INSTRUCCIONES.txt  (instrucciones detalladas)
+   Lee: README.md          (documentación técnica)
+
+
+╔════════════════════════════════════════════════════════════════════╗
+║                  ¡Listo para compilar? 🚀                          ║
+║                                                                    ║
+║   Próximo paso: Haz doble clic en compilar.bat                    ║
+╚════════════════════════════════════════════════════════════════════╝
