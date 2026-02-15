@@ -1,0 +1,81 @@
+/* ====== ESTILO GENERAL ====== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0b0b0b;
+  color: white;
+} /* ====== NAVBAR ====== */
+.navbar {
+  background: linear-gradient(90deg, #000000, #111111);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu > li {
+  position: relative;
+}
+.menu > li > a {
+  display: block;
+  padding: 18px 25px;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.menu > li > a:hover {
+  background-color: #1f1f1f;
+  color: #00d4ff;
+} /* ====== SUBMENÚ ====== */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.98);
+  backdrop-filter: blur(6px);
+  min-width: 220px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+  display: none;
+}
+.submenu li a {
+  display: block;
+  padding: 12px 20px;
+  color: #dcdcdc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+.submenu li a:hover {
+  background-color: #2a2a2a;
+  color: #00d4ff;
+  padding-left: 26px;
+} /* Mostrar submenu */
+.menu li:hover .submenu {
+  display: block;
+} /* ====== CONTENIDO ====== */
+.contenido {
+  padding: 60px;
+  text-align: center;
+}
+.titulo {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #00d4ff;
+}
+.subtitulo {
+  color: #bbbbbb;
+  margin-top: 10px;
+}
